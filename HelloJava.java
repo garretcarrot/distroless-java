@@ -6,6 +6,9 @@ import java.net.UnknownHostException;
 public class HelloJava {
   public static void main(String... args) throws InterruptedException {
     System.out.println("Hello from the container.");
+
+    System.out.printf("LOCAL: %s\n", System.getProperty("LOCAL"));
+
     if (args.length == 0) {
       return;
     }
